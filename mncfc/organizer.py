@@ -2,7 +2,7 @@ import os
 import glob
 import zipfile
 import shutil
-dir_path = r'\\192.168.1.152\ncfc data\Nadams Input Data\Satellite_data'
+dir_path = r'Absolue-address-or-path-to-the-directory-where-the-data-is-stored'
 os.chdir(dir_path)
 target = open('resource_year.txt', 'w')
 for zip_name in glob.glob('[0-9]*.zip'):
