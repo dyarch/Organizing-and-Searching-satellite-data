@@ -37,7 +37,7 @@ def month_number(month):
     return month
 
 # print "Directory or Path: "
-dir_path = r'\\192.168.1.152\ncfc data\Nadams Input Data\Satellite_data'
+dir_path = r'Absolue-address-or-path-to-the-directory-where-the-data-is-stored'
 os.chdir(dir_path)
 n = 1
 with open(r'C:\xampp\htdocs\mncfc\Typetwo.txt', 'r') as f:
