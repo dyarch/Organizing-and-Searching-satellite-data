@@ -1,0 +1,85 @@
+<html>
+<style>
+sup {
+    vertical-align: super;
+    font-size: smaller;
+}
+select {
+    width: 10%;
+    padding: 16px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #f1f1f1;
+}
+input[type=button], input[type=submit], input[type=reset] {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+input[type=text]:focus {
+    border: 3px solid black;
+}
+input[type=text] {
+    border: none;
+    border-bottom: 2px solid blue;
+}
+input[type=text] {
+    width: 10%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+label{
+  font-size: 20px;
+}
+</style>
+<body>
+<form action="typetwo.php" method="GET">
+<fieldset>
+<legend style="font-size:30px;">Search Query based on Date, Latitude and Longitude</legend>
+</br></br>
+
+<label for="startdate">From (Date of Pass):&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>  
+<input id="startdate" name="startdate" type="text" placeholder="01-JAN-2016" required="">
+</br></br></br>
+
+<label for="enddate">To (Date of Pass) :&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>  
+<input id="enddate" name="enddate" type="text" placeholder="31-DEC-2016" required="">
+</br></br></br>
+
+<label for="sensor">Sensor :&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+  <select id="sensor" name="sensor" class="form-control">
+    <option value="1">AWIFS</option>
+    <option value="2">LISS-III</option>
+    <option value="3">RISAT-I</option>
+    <option value="4">LISS-IV</option>
+  </select>
+</br></br></br>
+
+<label for="ullat">ProdULLat :&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+<input id="ullat" name="ullat" type="text" placeholder="12.345678" required="">
+</br></br></br>
+
+<label for="ullon">ProdULLon :&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+<input id="ullon" name="ullon" type="text" placeholder="12.345678" required="">
+</br></br></br>
+
+<label for="lrlat">ProdLRLat :&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>  
+<input id="lrlat" name="lrlat" type="text" placeholder="12.345678" required="">
+</br></br></br>
+
+<label for="lrlon">ProdLRLon :&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>  
+<input id="lrlon" name="lrlon" type="text" placeholder="12.345678" required="">
+</br></br></br>
+<div style = "text-align: center;">
+<input style="font-size: 22px;" type="submit"  value="Submit">
+</div>
+</fieldset>
+</form>
+<p> <sup>Created by: Devesh Yadav</sup></p>
+</body>
+</html>
